@@ -1,0 +1,44 @@
+body{
+    display: flex;
+    height: 86vh;
+    width: 100%;
+    flex-direction: column;
+}
+
+.otro-color{
+
+    height: 50%;
+    width: 50%;
+}
+
+main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+
+}
+
+.derecho{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    gap: 100px;
+}
+
+.izquierdo{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.estilo-botones{
+    height: 70px;
+ 
+}
+
+.estilo-botones:hover{
+    background-color: rebeccapurple;
+    transition: 1s;
+}

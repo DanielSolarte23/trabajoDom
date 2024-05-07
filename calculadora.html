@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            height: 90vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .calculadora{
+            border: solid red;
+            border-radius: 15px;
+            width: 600px;
+            height: 800px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgb(208, 79, 79);
+            color: white;
+        }
+        .resultado {
+            background-color: black;
+            color: white;
+            height: 30%;
+            width: 95%;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 60px;
+        }
+        .botones{
+            display: flex;
+            flex-direction: column;
+            border-radius: 50%;
+        }
+        .inputs{
+            height: 65%;
+
+            width: 95%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 20px;
+            gap: 15px;
+            padding: 20px;
+        }
+        .inputs div input {
+            width: 430px;
+            height: 70px;
+            font-size: 50px;
+            text-align: center;
+        }
+        .inputs div label{
+           font-size: 30px;
+        }
+        .operadores{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 50px;
+        }
+        .operadores button{
+            margin-top: 25px;
+            width: 230px;
+            height: 120px;
+            font-size: 80px;
+            background-color: red;
+            color: white;
+        }
+        .operadores button:hover{
+            background-color: rgb(227, 97, 97);
+        }
+    </style>
+    <title>Calculadora</title>
+</head>
+<body>
+    <main>
+        <section class="calculadora">
+            <article id="resultado" class="resultado"></article>
+            <article class="inputs">
+            <div>
+                <label for="Numero">Numero 1</label>
+                <input id="num1" type="text">
+            </div>
+            <div>
+                <label for="Numero">Numero 2</label>
+                <input id="num2" type="text">
+            </div>
+            <div class="operadores">
+                <button class="botons">7</button>
+                <button class="botons">8</button>
+                <button class="botons">9</button>
+                <button class="botons">%</button>
+                <button class="botons">4</button>
+                <button class="botons">5</button>
+                <button class="botons">6</button>
+                <button class="botons">X</button>
+                <button class="botons">1</button>
+                <button id="suma">2</button>
+                <button id="resta">3</button>
+                <button id="multiplicacion">-</button>
+                <button id="division">%</button>
+            </div>
+            </article>
+        </section>
+    </main>
+    <script src="calculadora.js"></script>
+</body>
+</html>

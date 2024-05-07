@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100vh;
+            width: 100%;
+        }
+        header{
+            width: 100%;
+            text-align: center;
+            height: 20%;
+        }
+        main{
+            height: 80%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            font-size: 55px;
+        }
+        #boton{
+            font-size: 25px;
+            width: 2
+            00px;
+        }
+        .recibido{
+            border: solid black;
+            height: 200px;
+            width: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <header>Formulario</header>
+    <main>
+        <label id="inputT" for="text">Nombre</label>
+        <input type="text">
+        <button id="boton" >Enviar</button>
+        <section class="recibido" id="Rec"></section>
+    </main>
+    <script src="formulario.js"></script>
+</body>
+</html>
